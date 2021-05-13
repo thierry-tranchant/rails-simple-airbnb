@@ -1,0 +1,18 @@
+.navbar {
+  justify-content: space-between;
+  background: #F7F7F7;
+  border-color: #c9c7c7;
+  height: 50px;
+  .home-title {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+  }
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}

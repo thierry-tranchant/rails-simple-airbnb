@@ -1,0 +1,54 @@
+<div class="banner">
+</div>
+
+<div class="container">
+  <div class="row d-flex justify-content-center mx-5">
+    <div class="col-8">
+      <div class="flat-details-left d-flex flex-column">
+        <div class="flat-details-header p-2">
+          <h2><%= @flat.name %></h2>
+          <p><%= @flat.description %></p>
+        </div>
+        <div class="flat-details-description p-2">
+          <h3>A bit more about this flat...</h3>
+          <p><%= @flat.description %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="flat-details-right d-flex flex-column">
+        <div class="flat-details-book p-2">
+          <h4>Book this place!</h4>
+          <form action="">
+            <div class="from-box">
+              <label for="from"></label>
+              <input type="text" id="from">
+            </div>
+            <div class="to-box">
+              <label for="to"></label>
+              <input type="text" id="to">
+            </div>
+            <input type="submit" value="Book">
+          </form>
+        </div>
+        <div class="flat-details-numbers p-2">
+          <h3>Details</h3>
+          <div class="flat-details-numbers-box d-flex">
+            <p><i class="fas fa-user-friends"></i><%= @flat.number_of_guests %></p>
+            <p class='mx-2'><i class="fas fa-euro-sign"></i><%= @flat.price_per_night %></p>
+          </div>
+        </div>
+        <div class="flat-details-share p-2 d-flex justify-content-between">
+          <p>Share</p>
+          <ul class="network-icons list-inline">
+            <li class="list-inline-item"><i class="fab fa-facebook-square"></i></li>
+            <li class="list-inline-item"><i class="fab fa-twitter-square"></i></li>
+            <li class="list-inline-item"><i class="fab fa-pinterest-square"></i></li>
+            <li class="list-inline-item"><i class="fas fa-envelope-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
